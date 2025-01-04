@@ -157,7 +157,7 @@ class TicTacToe:
         """
         Switches the current player between 1 (player 1) and 2 (player 2).
         """
-        self.current_player = 3 - self.current_player 
+        self.current_player = (self.current_player % 2) + 1 
 def main():
     """
     Starts and runs the game.
